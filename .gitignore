@@ -1,4 +1,9 @@
 data/
 venv/
 submission.csv
+.venv/
+__pycache__/
+*.pyc
+submission.csv
+.ipynb_checkpoints/
 .DS_Store
