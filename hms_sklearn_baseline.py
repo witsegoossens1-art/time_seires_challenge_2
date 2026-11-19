@@ -13,10 +13,11 @@ your own computer:
 5. Submission: refit on all training data, predict test.csv, write submission.csv.
 
 Usage:
-    python hms_sklearn_baseline.py --data-dir /path/to/hms-harmful-brain-activity-classification
-    python hms_sklearn_baseline.py --data-dir ... --mode quick      # random 3,000 spectrograms
-    python hms_sklearn_baseline.py --data-dir ... --no-cv           # skip cross-validation
-
+     python3 hms_sklearn_baseline.py --data-dir data/hms-harmful-brain-activity-classification --mode quick
+     python3 hms_sklearn_baseline.py --data-dir data/hms-harmful-brain-activity-classification --mode quick --no-cv
+     python3 hms_sklearn_baseline.py --data-dir data/hms-harmful-brain-activity-classification --mode full
+     python3 hms_sklearn_baseline.py --data-dir data/hms-harmful-brain-activity-classification --mode full --no-cv
+    
 Requires: numpy, pandas, pyarrow, scikit-learn, joblib.
 """
 import argparse

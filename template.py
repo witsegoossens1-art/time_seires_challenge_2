@@ -5,7 +5,14 @@ Run in a Kaggle notebook with the HMS competition dataset attached, or locally:
 
 Requires: numpy, pandas, scipy, scikit-learn, pyarrow.
 This is a teaching baseline, not a competitive Kaggle solution.
+
+python3 template.py --data-dir data/hms-harmful-brain-activity-classification --mode quick
+python3 template.py --data-dir data/hms-harmful-brain-activity-classification --mode quick --no-cv
+python3 template.py --data-dir data/hms-harmful-brain-activity-classification --mode full
+python3 template.py --data-dir data/hms-harmful-brain-activity-classification --mode full --no-cv
+     
 """
+
 import argparse
 from pathlib import Path
 
